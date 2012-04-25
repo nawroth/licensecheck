@@ -2,29 +2,28 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <artifactId>parent-pom</artifactId>
+    <artifactId>neo4j-licensecheck</artifactId>
     <groupId>org.neo4j.build</groupId>
-    <version>33</version>
-    <relativePath />
+    <version>1.8-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
   </parent>
 
   <groupId>org.neo4j.build</groupId>
-  <artifactId>neo4j-licensecheck-config</artifactId>
-  <packaging>jar</packaging>
+  <artifactId>neo4j-advanced-server-3rdparty-licenses</artifactId>
+  <packaging>pom</packaging>
 
-  <name>Neo4j - Licensecheck Config</name>
+  <name>Neo4j - Advanced Server Licensecheck</name>
 
   <version>1.8-SNAPSHOT</version>
   <description>License verification details.</description>
   <url>http://components.neo4j.org/${project.artifactId}/${project.version}</url>
 
   <properties>
+    <neo4j.groupId>org.neo4j.app</neo4j.groupId>
+    <neo4j.artifactId>neo4j-server-advanced</neo4j.artifactId>
     <docs-plugin.skip>true</docs-plugin.skip>
   </properties>
 
-  <scm>
-    <url>https://github.com/neo4j/packaging/tree/master/standalone-licenses</url>
-  </scm>
 
   <licenses>
     <license>
@@ -45,6 +44,15 @@ terms of the relevant Commercial Agreement.
       </comments>
     </license>
   </licenses>
+  
+  <dependencies>
+    <dependency>
+      <groupId>${neo4j.groupId}</groupId>
+      <artifactId>${neo4j.artifactId}</artifactId>
+      <type>pom</type>
+      <version>${neo4j.version}</version>
+    </dependency>
+  </dependencies>
 
   <distributionManagement>
     <site>

@@ -14,12 +14,12 @@
 
   <name>Neo4j - Licensecheck</name>
 
-  <version>1.7-SNAPSHOT</version>
+  <version>1.8-SNAPSHOT</version>
   <description>License verification details.</description>
   <url>http://components.neo4j.org/${project.artifactId}/${project.version}</url>
 
   <properties>
-    <neo4j.version>1.7</neo4j.version>
+    <neo4j.version>1.8-SNAPSHOT</neo4j.version>
     <docs-plugin.skip>true</docs-plugin.skip>
   </properties>
 
@@ -50,17 +50,13 @@ terms of the relevant Commercial Agreement.
   
   <modules>
     <module>licensecheck-config</module>
+    <module>community-embedded</module>
+    <module>advanced-embedded</module>
+    <module>enterprise-embedded</module>
+    <module>community-server</module>
+    <module>advanced-server</module>
+    <module>enterprise-server</module>
   </modules>
-  
-  <dependencies>
-    <dependency>
-      <groupId>org.neo4j.assembly</groupId>
-      <artifactId>neo4j-standalone</artifactId>
-      <type>pom</type>
-      <version>${neo4j.version}</version>
-    </dependency>
-  </dependencies>
-
 
   <build>
     <plugins>
@@ -71,6 +67,7 @@ terms of the relevant Commercial Agreement.
         <configuration>
           <failIfDisliked>false</failIfDisliked>
           <failIfMissing>true</failIfMissing>
+          <plainTextReport>true</plainTextReport>
           <excludedGroups>org.neo4j</excludedGroups>
         </configuration>
         <executions>
@@ -85,7 +82,7 @@ terms of the relevant Commercial Agreement.
                 <licensingRequirementFile>licensing-requirements-base.xml</licensingRequirementFile>
                 <licensingRequirementFile>licensing-requirements-oss.xml</licensingRequirementFile>
               </licensingRequirementFiles>
-              <thirdPartyLicensingFilename>third-party-licensing-oss.xml</thirdPartyLicensingFilename>
+              <thirdPartyLicensingFilename>${project.artifactId}-${neo4j.version}-oss.txt</thirdPartyLicensingFilename>
             </configuration>
           </execution>
           <execution>
@@ -99,7 +96,7 @@ terms of the relevant Commercial Agreement.
                 <licensingRequirementFile>licensing-requirements-base.xml</licensingRequirementFile>
                 <licensingRequirementFile>licensing-requirements-com.xml</licensingRequirementFile>
               </licensingRequirementFiles>
-              <thirdPartyLicensingFilename>third-party-licensing-com.xml</thirdPartyLicensingFilename>
+              <thirdPartyLicensingFilename>${project.artifactId}-${neo4j.version}.txt</thirdPartyLicensingFilename>
             </configuration>
           </execution>
         </executions>
@@ -107,7 +104,7 @@ terms of the relevant Commercial Agreement.
           <dependency>
             <groupId>org.neo4j.build</groupId>
             <artifactId>neo4j-licensecheck-config</artifactId>
-            <version>1.7-SNAPSHOT</version>
+            <version>1.8-SNAPSHOT</version>
           </dependency>
         </dependencies>
       </plugin>
