@@ -70,6 +70,9 @@
       <aka>Eclipse Public License - v 1.0</aka>
       <aka>EPL1.0</aka>
     </license>
+    <license name="GNU General Public License, version 2">
+      <aka>GPL2</aka>
+    </license>
     <license name="GNU General Public License, version 2 with the Classpath Exception">
       <aka>GPL2/CPE</aka>
       <aka>GPL2 w/ CPE</aka>
@@ -80,6 +83,7 @@
     <license name="GNU Lesser General Public License, Version 2.1">
       <aka>LGPL2.1</aka>
       <aka>GNU Lesser General Public License</aka>
+      <aka>GNU Lesser General Public License (LGPL), Version 2.1</aka>
     </license>
     <license name="MIT License">
       <aka>MIT</aka>

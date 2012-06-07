@@ -2,17 +2,17 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <artifactId>neo4j-licensecheck</artifactId>
+    <artifactId>neo4j-licensecheck-server</artifactId>
     <groupId>org.neo4j.build</groupId>
     <version>1.8-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
 
   <groupId>org.neo4j.build</groupId>
-  <artifactId>neo4j-enterprise-server-3rdparty-licenses</artifactId>
+  <artifactId>neo4j-advanced-server-3rdparty-licenses</artifactId>
   <packaging>pom</packaging>
 
-  <name>Neo4j - Enterprise Server Licensecheck</name>
+  <name>Neo4j - Advanced Server Licensecheck</name>
 
   <version>1.8-SNAPSHOT</version>
   <description>License verification details.</description>
@@ -20,14 +20,10 @@
 
   <properties>
     <neo4j.groupId>org.neo4j.app</neo4j.groupId>
-    <neo4j.artifactId>neo4j-server-enterprise</neo4j.artifactId>
+    <neo4j.artifactId>neo4j-server-advanced</neo4j.artifactId>
     <docs-plugin.skip>true</docs-plugin.skip>
   </properties>
 
-
-  <scm>
-    <url>https://github.com/neo4j/packaging/tree/master/licensecheck</url>
-  </scm>
 
   <licenses>
     <license>
@@ -57,35 +53,6 @@ terms of the relevant Commercial Agreement.
       <version>${neo4j.version}</version>
     </dependency>
   </dependencies>
-
-  <build>
-    <plugins>
-       <plugin>
-        <groupId>org.neo4j.build.plugins</groupId>
-        <artifactId>licensing-maven-plugin</artifactId>
-        <configuration>
-          <appendText>notice-windows-postfix.txt</appendText>
-        </configuration>
-        <executions>
-          <execution>
-            <id>enforce-licensing-com</id>
-            <phase>compile</phase>
-            <goals>
-              <goal>check</goal>
-            </goals>
-            <configuration>
-              <licensingRequirementFiles>
-                <licensingRequirementFile>licensing-requirements-base.xml</licensingRequirementFile>
-            <licensingRequirementFile>licensing-requirements-js.xml</licensingRequirementFile>
-                <licensingRequirementFile>licensing-requirements-com.xml</licensingRequirementFile>
-              </licensingRequirementFiles>
-              <thirdPartyLicensingFilename>${project.artifactId}-${neo4j.version}.txt</thirdPartyLicensingFilename>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
-    </plugins>
-  </build>
 
   <distributionManagement>
     <site>

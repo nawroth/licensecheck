@@ -21,13 +21,13 @@
 
 -->
 <licensing-requirements>
-  <liked-license>Apache Software License, Version 2.0</liked-license>
-  <liked-license>BSD License</liked-license>
-  <liked-license>Common Development and Distribution License Version 1.0</liked-license>
-  <liked-license>Common Development and Distribution License Version 1.1</liked-license>
-  <liked-license>Common Development and Distribution License Version 1.1 and GNU General Public License, version 2 with the Classpath Exception</liked-license>
-  <liked-license>Eclipse Public License, Version 1.0</liked-license>
-  <liked-license>GNU Lesser General Public License, Version 2.1</liked-license>
-  <liked-license>MIT License</liked-license>
+  <missing-artifacts>
+    <artifact id="jna" name="Java Native Access">
+      <license>LGPL2.1</license>
+    </artifact>
+    <artifact id="yajsw" name="Yet Another Java Service Wrapper">
+      <license>LGPL2.1</license>
+    </artifact>
+  </missing-artifacts>
 </licensing-requirements>
 
