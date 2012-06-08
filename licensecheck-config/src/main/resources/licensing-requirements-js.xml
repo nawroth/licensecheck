@@ -47,7 +47,7 @@
     <artifact id="excanvas.js" name="ExplorerCanvas">
       <license>ASL2.0</license>
     </artifact>
-    <artifact id="has.js" name="">
+    <artifact id="has.js" name="Pure Feature Detection Library (has.js)">
       <license>New BSD License</license>
       <license>MIT</license>
       <license>Academic Free License</license>
@@ -82,6 +82,12 @@
     </artifact>
     <artifact id="seedrandom.js" name="seedrandom.js">
       <license>seedrandom.js - BSD</license>
+    </artifact>
+    <artifact id="glyphish" name="Glyphish Icons Free">
+      <license>Glyphish - CC BY 3.0</license>
+    </artifact>
+    <artifact id="tango" name="Tango Icons">
+      <license>Tango - Public Domain</license>
     </artifact>
   </missing-artifacts>
 </licensing-requirements>
