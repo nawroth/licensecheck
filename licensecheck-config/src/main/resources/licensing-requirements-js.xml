@@ -22,7 +22,55 @@
 -->
 <licensing-requirements>
   <missing-artifacts>
-    <artifact id="jquery" name="JQuery">
+    <artifact id="arbor.js" name="arbor.js">
+      <license>MIT</license>
+    </artifact>
+    <artifact id="arbor-graphics.js" name="arbor-graphics.js">
+      <license>MIT</license>
+    </artifact>
+    <artifact id="arbor-tween.js" name="arbor-tween.js">
+      <license>MIT</license>
+    </artifact>
+    <artifact id="easing.js" name="Easing Equations (in easing.js)">
+      <license>BSD License</license>
+    </artifact>
+    <artifact id="backbone.js" name="Underscore.js">
+      <license>MIT</license>
+    </artifact>
+    <artifact id="colorpicker.js" name="Color picker">
+      <license>MIT</license>
+      <license>GPL2</license>
+    </artifact>
+    <artifact id="DateFormat.js" name="Date Format">
+      <license>MIT</license>
+    </artifact>
+    <artifact id="excanvas.js" name="ExplorerCanvas">
+      <license>ASL2.0</license>
+    </artifact>
+    <artifact id="has.js" name="">
+      <license>New BSD License</license>
+      <license>MIT</license>
+      <license>Academic Free License</license>
+    </artifact>
+    <artifact id="jquery.flot.js" name="jquery.flot.js">
+      <license>MIT</license>
+    </artifact>
+    <artifact id="jquery.colorhelpers.js" name="jquery.colorhelpers.js">
+      <license>MIT</license>
+    </artifact>
+    <artifact id="jquery.hotkeys.js" name="jquery.hotkeys.js">
+      <license>MIT</license>
+      <license>GPL2</license>
+    </artifact>
+    <artifact id="jquery.js" name="JQuery">
+      <license>MIT</license>
+      <license>GPL2</license>
+    </artifact>
+    <artifact id="jquery.putCursorAtEnd.js" name="jquery.putCursorAtEnd.js">
+      <license>MIT</license>
+      <license>GPL2</license>
+    </artifact>
+    <artifact id="jquery.sortable.js" name="jquery.sortable.js">
       <license>MIT</license>
       <license>GPL2</license>
     </artifact>
