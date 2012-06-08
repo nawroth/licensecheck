@@ -66,13 +66,22 @@
       <license>MIT</license>
       <license>GPL2</license>
     </artifact>
-    <artifact id="jquery.putCursorAtEnd.js" name="jquery.putCursorAtEnd.js">
+    <!-- artifact id="jquery.putCursorAtEnd.js" name="jquery.putCursorAtEnd.js">
       <license>MIT</license>
       <license>GPL2</license>
-    </artifact>
+    </artifact -->
     <artifact id="jquery.sortable.js" name="jquery.sortable.js">
       <license>MIT</license>
       <license>GPL2</license>
+    </artifact>
+    <artifact id="json2.js" name="JSON2">
+      <license>JSON2 - Public Domain</license>
+    </artifact>
+    <artifact id="rgbcolor.js" name="RGB Color">
+      <license>RGB Color - Public Domain</license>
+    </artifact>
+    <artifact id="seedrandom.js" name="seedrandom.js">
+      <license>seedrandom.js - BSD</license>
     </artifact>
   </missing-artifacts>
 </licensing-requirements>
