@@ -63,7 +63,7 @@ terms of the relevant Commercial Agreement.
         <artifactId>licensing-maven-plugin</artifactId>
         <version>1.7.2-SNAPSHOT</version>
         <configuration>
-          <failIfDisliked>false</failIfDisliked>
+          <failIfDisliked>true</failIfDisliked>
           <failIfMissing>true</failIfMissing>
           <plainTextReport>true</plainTextReport>
           <prependText>notice-agpl-prefix.txt</prependText>
@@ -94,7 +94,9 @@ terms of the relevant Commercial Agreement.
               <licensingRequirementFiles>
                 <licensingRequirementFile>licensing-requirements-base.xml</licensingRequirementFile>
               </licensingRequirementFiles>
-              <thirdPartyLicensingFilename>${project.artifactId}-${neo4j.version}-all.txt</thirdPartyLicensingFilename>
+              <thirdPartyLicensingFilename>${project.artifactId}-${neo4j.version}-NOTICE.txt</thirdPartyLicensingFilename>
+              <listPrependText>list-prefix.txt</listPrependText>
+              <listReport>${project.artifactId}-${neo4j.version}-LICENSES.txt</listReport>
             </configuration>
           </execution>
           <execution>

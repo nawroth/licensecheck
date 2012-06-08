@@ -26,7 +26,7 @@
       <license>ASL2.0</license>
     </artifact>
     <artifact id="asm:asm:jar:3.1">
-      <license>BSD</license>
+      <license>ASM License</license>
     </artifact>
     <artifact id="org.codehaus.jettison:jettison:bundle:1.3">
       <license>ASL2.0</license>
@@ -87,7 +87,6 @@
     </license>
     <license name="MIT License">
       <aka>MIT</aka>
-      <aka>Bouncy Castle License</aka>
     </license>
   </coalesced-licenses>
 </licensing-requirements>
