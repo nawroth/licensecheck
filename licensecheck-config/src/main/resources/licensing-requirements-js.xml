@@ -66,10 +66,10 @@
       <license>MIT</license>
       <license>GPL2</license>
     </artifact>
-    <!-- artifact id="jquery.putCursorAtEnd.js" name="jquery.putCursorAtEnd.js">
+    <artifact id="jquery.putCursorAtEnd.js" name="jquery.putCursorAtEnd.js">
       <license>MIT</license>
       <license>GPL2</license>
-    </artifact -->
+    </artifact>
     <artifact id="jquery.sortable.js" name="jquery.sortable.js">
       <license>MIT</license>
       <license>GPL2</license>
