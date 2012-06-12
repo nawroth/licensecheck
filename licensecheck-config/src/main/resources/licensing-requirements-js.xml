@@ -75,19 +75,19 @@
       <license>GPL2</license>
     </artifact>
     <artifact id="json2.js" name="JSON2">
-      <license>JSON2 - Public Domain</license>
+      <license>Public Domain - JSON2</license>
     </artifact>
     <artifact id="rgbcolor.js" name="RGB Color">
-      <license>RGB Color - Public Domain</license>
+      <license>Public Domain - RGB Color</license>
     </artifact>
     <artifact id="seedrandom.js" name="seedrandom.js">
-      <license>seedrandom.js - BSD</license>
+      <license>BSD - seedrandom.js</license>
     </artifact>
     <artifact id="glyphish" name="Glyphish Icons Free">
-      <license>Glyphish - CC BY 3.0</license>
+      <license>Creative Commons - Glyphish</license>
     </artifact>
     <artifact id="tango" name="Tango Icons">
-      <license>Tango - Public Domain</license>
+      <license>Public Domain - Tango</license>
     </artifact>
   </missing-artifacts>
 </licensing-requirements>
