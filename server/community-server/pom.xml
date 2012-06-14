@@ -19,8 +19,8 @@
   <url>http://components.neo4j.org/${project.artifactId}/${project.version}</url>
 
   <properties>
-    <neo4j.groupId>org.neo4j.app</neo4j.groupId>
-    <neo4j.artifactId>neo4j-server</neo4j.artifactId>
+    <neo4j.groupId>org.neo4j.assembly</neo4j.groupId>
+    <neo4j.artifactId>neo4j-community-standalone</neo4j.artifactId>
     <docs-plugin.skip>true</docs-plugin.skip>
   </properties>
 
