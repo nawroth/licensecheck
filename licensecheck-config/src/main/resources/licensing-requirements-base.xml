@@ -35,6 +35,11 @@
       <license>ASL2.0</license>
     </artifact>
   </missing-licenses>
+  <override-licenses>
+    <artifact id="org.slf4j:jcl-over-slf4j:">
+      <license>ASL2.0</license>
+    </artifact>
+  </override-licenses>
   <coalesced-licenses>
     <license name="Academic Free License version 3.0">
       <aka>Academic Free License</aka>
