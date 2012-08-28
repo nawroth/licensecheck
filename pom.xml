@@ -47,9 +47,8 @@ terms of the relevant Commercial Agreement.
       </comments>
     </license>
   </licenses>
-  
+
   <modules>
-    <module>licensecheck-config</module>
     <module>community-embedded</module>
     <module>advanced-embedded</module>
     <module>enterprise-embedded</module>
@@ -61,7 +60,7 @@ terms of the relevant Commercial Agreement.
        <plugin>
         <groupId>org.neo4j.build.plugins</groupId>
         <artifactId>licensing-maven-plugin</artifactId>
-        <version>1.7.3</version>
+        <version>1.7.4-SNAPSHOT</version>
         <configuration>
           <failIfDisliked>true</failIfDisliked>
           <failIfMissing>true</failIfMissing>
@@ -117,8 +116,8 @@ terms of the relevant Commercial Agreement.
         <dependencies>
           <dependency>
             <groupId>org.neo4j.build</groupId>
-            <artifactId>neo4j-licensecheck-config</artifactId>
-            <version>1.8-SNAPSHOT</version>
+            <artifactId>licenseconfig</artifactId>
+            <version>1-SNAPSHOT</version>
           </dependency>
         </dependencies>
       </plugin>
