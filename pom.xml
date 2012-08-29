@@ -60,7 +60,7 @@ terms of the relevant Commercial Agreement.
        <plugin>
         <groupId>org.neo4j.build.plugins</groupId>
         <artifactId>licensing-maven-plugin</artifactId>
-        <version>1.7.4-SNAPSHOT</version>
+        <version>1.7.4</version>
         <configuration>
           <failIfDisliked>true</failIfDisliked>
           <failIfMissing>true</failIfMissing>
@@ -116,7 +116,7 @@ terms of the relevant Commercial Agreement.
         <dependencies>
           <dependency>
             <groupId>org.neo4j.build</groupId>
-            <artifactId>licenseconfig</artifactId>
+            <artifactId>licensecheck-config</artifactId>
             <version>1-SNAPSHOT</version>
           </dependency>
         </dependencies>
